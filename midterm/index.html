@@ -3,58 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NBA Basketball</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>NBA Universe</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header Section -->
+    <!-- HEADER SECTION -->
     <header>
-        <img src="images/nba-header.jpg" alt="NBA Header Image">
-        <h1 class="site-title">The World of NBA Basketball</h1>
+        <img src="images/nba-banner.png" alt="NBA Banner">
+        <h1 class="site-title">NBA Universe</h1>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Article Section -->
-        <section class="article">
-            <img src="images/basketball-article.jpg" alt="Basketball Image" class="article-img">
-            <p>
-                The NBA (National Basketball Association) is the premier professional basketball league in the world.
-                Established in 1946, it has grown into a global phenomenon with legendary players like Michael Jordan, 
-                LeBron James, and Kobe Bryant. The game has evolved with fast-paced action, high-flying dunks, 
-                and intense rivalries that captivate millions of fans worldwide.
-            </p>
-        </section>
+    <!-- NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#story">STORY</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
 
-        <!-- Facts Section -->
-        <section class="facts">
-            <h2>NBA Fast Facts</h2>
-            <ul>
-                <li>🏀 The NBA was founded in 1946 as the BAA.</li>
-                <li>🏀 Michael Jordan has won 6 NBA championships.</li>
-                <li>🏀 The Boston Celtics and Los Angeles Lakers have won the most titles.</li>
-                <li>🏀 The highest-scoring NBA game was 186-184 (Pistons vs. Nuggets in 1983).</li>
-            </ul>
-        </section>
+    <!-- ARTICLE SECTION -->
+    <section id="home">
+        <h2>History of the NBA</h2>
+        <img src="images/nba-player.jpg" alt="NBA Player" class="article-img">
+        <p>
+            The National Basketball Association (NBA) was founded in 1946 as the Basketball Association of America (BAA). 
+            It later merged with the National Basketball League (NBL) to form the NBA in 1949. Over the decades, the league 
+            has grown into a global powerhouse, featuring legendary players like Michael Jordan, LeBron James, Kobe Bryant, 
+            and Stephen Curry. With intense rivalries, high-flying dunks, and unforgettable championship moments, the NBA 
+            remains a beloved sport worldwide.
+        </p>
+    </section>
 
-        <!-- Contact Form -->
-        <section class="contact-form">
-            <h2>Stay Updated on NBA News</h2>
-            <form action="#" method="post">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
+    <!-- FACTS SECTION -->
+    <section id="story">
+        <h2>Interesting NBA Facts</h2>
+        <ul>
+            <li>The NBA was officially founded in 1946 as the BAA before merging with the NBL in 1949.</li>
+            <li>Wilt Chamberlain holds the record for most points in a single game with 100.</li>
+            <li>Michael Jordan won six NBA championships with the Chicago Bulls.</li>
+            <li>The Boston Celtics hold the most NBA championships with 17 titles.</li>
+            <li>LeBron James is the youngest player to score 30,000 career points.</li>
+        </ul>
+    </section>
 
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
+    <!-- CONTACT FORM -->
+    <section id="contact">
+        <h2>Contact to Learn More</h2>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
 
-                <label for="message">Your Favorite NBA Team:</label>
-                <textarea id="message" name="message" rows="3" required></textarea>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
 
-                <button type="submit">Subscribe</button>
-            </form>
-        </section>
-    </main>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <p>Would you like to attend an NBA game?</p>
+            <label><input type="radio" name="visit" value="yes"> Yes</label>
+            <label><input type="radio" name="visit" value="no"> No</label>
+            <label><input type="radio" name="visit" value="maybe"> Maybe</label>
+
+            <button type="submit">SEND</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 NBA Universe.</p>
+    </footer>
 
 </body>
 </html>
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* HEADER */
+header {
+    position: relative;
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.site-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5em;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+}
+
+/* NAVIGATION */
+nav {
+    background: #002f6c;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* SECTIONS */
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ARTICLE IMAGE WRAPPING */
+.article-img {
+    float: left;
+    width: 200px;
+    margin: 0 20px 10px 0;
+    border-radius: 10px;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #002f6c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0048a8;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #002f6c;
+    color: white;
+    margin-top: 20px;
+}
