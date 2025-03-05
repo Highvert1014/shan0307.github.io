@@ -134,3 +134,195 @@
 
 </body>
 </html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lone Starfish</title>
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #A7C5C6; /* Light teal background */
+        }
+
+        /* HEADER */
+        header {
+            position: relative;
+            height: 300px;
+            background: url('images/starfish-header.jpg') center/cover no-repeat; /* Background image */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 2.8em;
+            background: rgba(0, 0, 0, 0.5); /* Text overlay */
+            padding: 10px 20px;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: #DDE5E5;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 40px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        /* MAIN CONTENT */
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ARTICLE IMAGE */
+        .article-img {
+            float: left;
+            width: 220px;
+            margin: 0 20px 10px 0;
+            border-radius: 10px;
+            border: 3px solid #999;
+        }
+
+        /* FACTS SECTION */
+        #facts h3 {
+            background-color: #468189;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        #facts ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #facts ul li {
+            padding: 5px 0;
+            font-size: 1.1em;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        #facts ul li::before {
+            content: "•";
+            color: #468189;
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* CONTACT FORM */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #999;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        form button {
+            background: #468189;
+            color: white;
+            padding: 10px;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        form button:hover {
+            background: #2C5A60;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #DDE5E5;
+            color: black;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Lone Starfish</h1>
+    </header>
+
+    <!-- NAVIGATION MENU -->
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">STORY</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <h2>Life of a Starfish</h2>
+        <img src="images/starfish.jpg" alt="Starfish" class="article-img">
+        <p>
+            Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. 
+            Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "French angelfish peamouth halfbeak barbfish 
+            Australian prowfish mouthbrooder."
+        </p>
+
+        <h2>Facts About Starfish</h2>
+        <section id="facts">
+            <h3>Interesting Facts</h3>
+            <ul>
+                <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
+                <li>Waryfish, lionfish, longfin smelt; leopard danio dragonfish.</li>
+                <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
+                <li>Waryfish, lionfish
