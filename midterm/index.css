@@ -1,15 +1,16 @@
-/* General Styles */
+/* GENERAL STYLES */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFFFFF; /* NBA White */
+    background-color: #FFFFFF; /* White Background */
 }
 
 /* HEADER */
 header {
     position: relative;
     text-align: center;
+    background-color: #1D428A; /* NBA Blue */
 }
 
 header img {
@@ -23,15 +24,15 @@ header img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #FFFFFF;
-    font-size: 2.8em;
+    color: #FFFFFF; /* White Text */
+    font-size: 2.5em;
     background: rgba(0, 0, 0, 0.6);
     padding: 10px 20px;
 }
 
 /* NAVIGATION */
 nav {
-    background: #0077C0;
+    background: #1D428A; /* NBA Blue */
     padding: 10px;
     text-align: center;
 }
@@ -47,127 +48,21 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #FFFFFF;
+    color: #FFFFFF; /* White Text */
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #C8102E;
+    color: #C8102E; /* NBA Red */
 }
 
-/* SECTIONS */
+/* ARTICLE SECTION */
 section {
     max-width: 850px;
     margin: 40px auto;
     padding: 20px;
-    background: #FFFFFF;
+    background: #FFFFFF; /* White Background */
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border: 3px solid #0077C0;
-}
-
-/* ARTICLE IMAGE */
-.article-img {
-    float: left;
-    width: 220px;
-    margin: 0 20px 10px 0;
-    border-radius: 10px;
-    border: 3px solid #C8102E;
-}
-
-/* TIMELINE */
-.timeline ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.timeline ul li {
-    padding: 8px 0;
-    font-size: 1.1em;
-    position: relative;
-    padding-left: 20px;
-}
-
-.timeline ul li::before {
-    content: "🏀";
-    position: absolute;
-    left: 0;
-    font-size: 1.2em;
-    color: #0077C0;
-}
-
-/* FACTS */
-#facts h3 {
-    background-color: #C8102E;
-    color: #FFFFFF;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-#facts ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#facts ul li {
-    padding: 5px 0;
-    font-size: 1.1em;
-    position: relative;
-    padding-left: 20px;
-}
-
-#facts ul li::before {
-    content: "🏀";
-    position: absolute;
-    left: 0;
-    font-size: 1.2em;
-    color: #0077C0;
-}
-
-/* FORM */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin: 10px 0 5px;
-    font-weight: bold;
-    color: #0077C0;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 2px solid #0077C0;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-form button {
-    background: #C8102E;
-    color: #FFFFFF;
-    padding: 10px;
-    font-size: 1.2em;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-form button:hover {
-    background: #0077C0;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 15px;
-    background: #0077C0;
-    color: #FFFFFF;
-    font-size: 1.1em;
-}
+    box-s
