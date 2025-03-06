@@ -3,78 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lone Starfish</title>
+    <title>NBA Universe - The Greatest Basketball League</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <!-- HEADER SECTION -->
     <header>
-        <h1 class="site-title">Lone Starfish</h1>
+       <img src="images/nba-logo.png" alt="NBA Logo">
+       <h1 class="site-title">NBA Universe</h1>
     </header>
 
     <!-- NAVIGATION MENU -->
     <nav>
         <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">STORY</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#timeline">TIMELINE</a></li>
+            <li><a href="#facts">FACTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
 
-    <!-- MAIN CONTENT -->
-    <main>
-        <section id="life">
-            <h2>Life of a Starfish</h2>
-            <div class="content">
-                <img src="images/starfish.jpg" alt="Starfish Image" class="article-img">
-                <p>
-                    Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. 
-                    Snapper catalufa silver driftfish, kaluga lungfish boga greeneye. "French angelfish peanutfish halfbeak 
-                    batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothhound; amur pike barbed.
-                </p>
-            </div>
-        </section>
+    <!-- ARTICLE SECTION -->
+    <section id="home">
+        <h2>The Evolution of the NBA</h2>
+        <img src="https://media.gettyimages.com/photos/lebron-james-of-the-los-angeles-lakers-reacts-to-a-foul-during-the-picture-id1240726495" 
+             alt="LeBron James Reacting to a Foul" width="500">
+        <p>
+            The National Basketball Association (NBA) is the premier professional basketball league in the world. 
+            Founded in 1946 as the Basketball Association of America (BAA), it merged with the National Basketball 
+            League (NBL) in 1949 to form what we now know as the NBA. Over the decades, the league has transformed 
+            dramatically, introducing new rules, expanding teams, and fostering global superstars.
+        </p>
+    </section>
 
-        <section id="facts">
-            <h3>Facts About Starfish</h3>
-            <ul>
-                <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
-                <li>Waryfish, "lionfish", longfin smelt; leopard danio dragonfish, "Lost River sucker, mojarra."</li>
-                <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
-            </ul>
-        </section>
+    <!-- TIMELINE SECTION -->
+    <section id="timeline">
+        <h2>NBA Timeline: Key Milestones</h2>
+    <section id="facts">
+        <h2>Amazing NBA Facts</h2>
+        
+        <h3>🏀 Scoring & Offense</h3>
+        <ul>
+            <li>Wilt Chamberlain holds the record for most points in a game (100 points, 1962).</li>
+            <li>Michael Jordan holds the playoff scoring record (63 points, 1986).</li>
+            <li>Stephen Curry holds the NBA record for most career 3-pointers made (3,500+ and counting).</li>
+        </ul>
+    </section>
 
         <!-- CONTACT FORM -->
-        <section id="contact">
-            <h2>Contact to learn more</h2>
-            <form action="#" method="post">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <form action="#" method="post">
+        <div class="timeline">
+            <ul>
+                <li><strong>June 6, 1946:</strong> BAA is founded in New York City.</li>
+                <li><strong>November 1, 1946:</strong> First BAA game played; New York defeats Toronto 68-66.</li>
+                <li><strong>1947:</strong> Philadelphia Warriors win first BAA Championship.</li>
+                <li><strong>August 3, 1949:</strong> BAA and NBL merge to form the NBA.</li>
+                <li><strong>1950s-2023:</strong> The NBA evolves with rule changes, global expansion, and iconic moments.</li>
+            </ul>
+        </div>
+    </section>
 
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
+    <!-- FACTS SECTION -->
+    <section id="facts">
+        <h2>Amazing NBA Facts</h2>
+        
+        <h3>🏀 Scoring & Offense</h3>
+        <ul>
+            <li>Wilt Chamberlain holds the record for most points in a game (100 points, 1962).</li>
+            <li>Michael Jordan holds the playoff scoring record (63 points, 1986).</li>
+            <li>Stephen Curry holds the NBA record for most career 3-pointers made (3,500+ and counting).</li>
+        </ul>
+    </section>
 
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" required></textarea>
+        <!-- CONTACT FORM -->
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
 
-                <p>Would you like to visit the starfish?</p>
-                <label><input type="radio" name="visit" value="yes"> Yes</label>
-                <label><input type="radio" name="visit" value="no"> No</label>
-                <label><input type="radio" name="visit" value="maybe"> Maybe</label>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
 
-                <button type="submit">SEND</button>
-            </form>
-        </section>
-    </main>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">SEND</button>
+        </form>
+    </section>
 
     <!-- FOOTER -->
     <footer>
-        <p>© Lone Starfish.</p>
+        <p>&copy; 2025 NBA Universe. All Rights Reserved.</p>
     </footer>
 
 </body>
 </html>
+
+    
+
 
 /* GENERAL STYLES */
 body {
